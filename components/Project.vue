@@ -1,22 +1,71 @@
 <template>
-	<nuxt-link :to="props.link" class="project-box">
-		<!-- <div class="project-box"> -->
-			<h2>{{ props.title }}</h2>
-			<img :src="props.thumbnail" />
-		<!-- </div> -->
+	<nuxt-link :to="props.project.link" class="project-box">
+		<div class="project-text-box">
+
+			<h2>{{ props.project.title }}</h2>
+			<div class="keywords-box">
+				<span v-for="keyword,i in props.project.keywords" class="keyword-box" :key="i">{{ keyword }}</span>
+			</div>
+			<p v-html="props.project.description"></p>
+		</div>
+			<img :src="`_nuxt/assets/images/${props.project.thumbnailImg}`" class="project-thumbnail" :alt="props.project.thumbnailAlt"/>
 	</nuxt-link>
 </template>
 
 <script setup lang="ts">
-interface IProps {
-	title: string;
-	link: string;
-	thumbnail: string;
+import type { IProject } from '~/types/Project.js'
+
+type Props = {
+	project: any;
 }
 
-const props = withDefaults(defineProps<IProps>(),{
-	title: 'project title default prop',
-	link: '/',
-	thumbnail: 'https://via.placeholder.com/150',
+const props = withDefaults(defineProps<Props>(),{
 })
 </script>
+
+<style lang="sass" scoped>
+.project-box
+	display: flex
+	// flex-direction: column
+	justify-content: space-between
+	gap: 1rem
+	padding: 1rem
+	border: 2px solid $primary-color
+	cursor: pointer
+	transition: all 0.2s ease-in-out
+
+	&:hover
+		background: $secondary-color
+		transform: scale(1.1)
+
+	&.right
+		flex-direction: row-reverse
+
+.project-text-box
+	display: flex
+	flex-direction: column
+	// align-items: center
+	width: 60%
+	gap: 1rem
+
+.project-thumbnail
+	width: 40%
+	height: auto
+	max-width: 300px
+	max-height: 300px
+	object-fit: contain
+
+.keywords-box
+	display: flex
+	flex-wrap: wrap
+
+.keyword-box
+	margin: 0.3rem 0.3rem 0.3rem 0
+	padding: 0.3rem 0.6rem
+	font-size: 0.8rem
+	font-weight: 600
+	background: $secondary-color
+	color: white
+	border-radius: 100px
+	white-space: nowrap
+</style>

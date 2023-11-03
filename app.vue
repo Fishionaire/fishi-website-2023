@@ -1,5 +1,15 @@
 <template>
-  <div>
+  <div class="fishi-content-box">
 	<router-view></router-view>
   </div>
 </template>
+
+<style lang="sass" scoped>
+.fishi-content-box
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 1000px
+	margin: 0 auto
+	//
+</style>

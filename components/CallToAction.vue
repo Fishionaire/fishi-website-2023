@@ -21,8 +21,14 @@ const props = withDefaults(defineProps<IProps>(),{
 	a
 		display: inline-flex
 		justify-content: center
+		margin: 3rem 0
 		padding: 1rem
+		color: white
 		background: $primary-color
 		cursor: pointer
+		border-radius: $border-radius
+
+		&:hover
+			background: $secondary-color
 
 </style>
