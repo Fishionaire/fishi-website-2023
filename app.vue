@@ -11,5 +11,9 @@
 	align-items: center
 	max-width: 1000px
 	margin: 0 auto
+
+	@include max-s
+		padding: 0 1rem
+		width: 100%
 	//
 </style>

@@ -1,0 +1,73 @@
+/* standard base sizes */
+// $small: 320px /* not used for media queries below */
+// $medium: 640px
+// $large: 960px
+$extra-large: 1440px
+
+/* paralax */
+$xsmall: 320px
+$small: 400px
+$medium: 720px
+$large: 960px // tablet + small desktop
+$large1: 1160px // normal desktop
+
+$max-width-desktop: $large1 - 40px
+$max-width-nav: 1440px
+$max-width-article: 800px
+
+$max-xsmall-media: '(max-width: #{$small})'
+$small-media: '(max-width: #{$medium - 1})'
+$small-medium-media: '(min-width: #{$small}) and (max-width: #{$medium})'
+$min-medium-media: '(min-width: #{$medium})'
+$max-medium-media: '(max-width: #{$large})'
+$medium-media: '(min-width: #{$medium}) and (max-width: #{$large})'
+$large-media: '(min-width: #{$large}) and (max-width: #{$extra-large})'
+$extra-large-media: '(min-width: #{$extra-large + 1})'
+$min-large-media: '(min-width: #{$large + 1})'
+$min-large1-media: '(min-width: #{$large1 + 1})'
+
+@mixin xs
+	@media #{$max-xsmall-media}
+		@content
+
+// @todo: fix | max-s and s are the same -- small should ONLY be small
+// all includes have to be checked
+@mixin s
+	@media #{$small-media}
+		@content
+
+@mixin max-s
+	@media #{$small-media}
+		@content
+
+@mixin s-m
+	@media #{$small-medium-media}
+		@content
+
+@mixin min-m
+	@media #{$min-medium-media}
+		@content
+
+@mixin max-m
+	@media #{$max-medium-media}
+		@content
+
+@mixin m
+	@media #{$medium-media}
+		@content
+
+@mixin min-l
+	@media #{$min-large-media}
+		@content
+
+@mixin min-l1
+	@media #{$min-large1-media}
+		@content
+
+@mixin l
+	@media #{$large-media}
+		@content
+
+@mixin xl
+	@media #{$extra-large-media}
+		@content

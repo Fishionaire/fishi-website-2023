@@ -26,7 +26,6 @@ const props = withDefaults(defineProps<Props>(),{
 <style lang="sass" scoped>
 .project-box
 	display: flex
-	// flex-direction: column
 	justify-content: space-between
 	gap: 1rem
 	padding: 1rem
@@ -34,26 +33,40 @@ const props = withDefaults(defineProps<Props>(),{
 	cursor: pointer
 	transition: all 0.2s ease-in-out
 
+	@include max-s
+		flex-direction: column
+
 	&:hover
-		background: $secondary-color
+		// background: $secondary-color
 		transform: scale(1.1)
 
 	&.right
-		flex-direction: row-reverse
+		@include min-m
+			flex-direction: row-reverse
 
 .project-text-box
 	display: flex
 	flex-direction: column
 	// align-items: center
-	width: 60%
 	gap: 1rem
 
+	@include max-s
+		order: 2
+
+	@include min-m
+		width: 60%
+
 .project-thumbnail
-	width: 40%
 	height: auto
 	max-width: 300px
 	max-height: 300px
 	object-fit: contain
+
+	@include max-s
+		order: 1
+
+	@include min-m
+		width: 40%
 
 .keywords-box
 	display: flex
