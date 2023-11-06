@@ -3,9 +3,11 @@
 	<router-view></router-view>
   </div>
 
-  <Footer />
+  <FishiFooter />
 
-  <CookieMessage />
+  	<ClientOnly fallback="Cookie Message">
+  		<CookieMessage />
+	</ClientOnly>
 </template>
 
 <style lang="sass" scoped>

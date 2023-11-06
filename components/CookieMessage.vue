@@ -12,3 +12,12 @@
 <script setup lang="ts">
 const { revokeConsent } = useGtag()
 </script>
+
+<style lang="sass" scoped>
+.cookie-message-box
+	position: fixed
+	bottom: 0
+	z-index: 1000
+	background-color: white
+
+</style>
