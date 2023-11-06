@@ -2,6 +2,8 @@
   <div class="fishi-content-box">
 	<router-view></router-view>
   </div>
+
+  <Footer />
 </template>
 
 <style lang="sass" scoped>
@@ -15,5 +17,4 @@
 	@include max-s
 		padding: 0 1rem
 		width: 100%
-	//
 </style>

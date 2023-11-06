@@ -2,13 +2,13 @@
 	<nuxt-link :to="props.project.link" class="project-box">
 		<div class="project-text-box">
 
-			<h2>{{ props.project.title }}</h2>
+			<h3>{{ props.project.title }}</h3>
 			<div class="keywords-box">
 				<span v-for="keyword,i in props.project.keywords" class="keyword-box" :key="i">{{ keyword }}</span>
 			</div>
 			<p v-html="props.project.description"></p>
 		</div>
-			<img :src="`_nuxt/assets/images/${props.project.thumbnailImg}`" class="project-thumbnail" :alt="props.project.thumbnailAlt"/>
+			<NuxtImg :src="`/${props.project.thumbnailImg}`" class="project-thumbnail" :alt="props.project.thumbnailAlt"/>
 	</nuxt-link>
 </template>
 
@@ -30,6 +30,7 @@ const props = withDefaults(defineProps<Props>(),{
 	gap: 1rem
 	padding: 1rem
 	border: 2px solid $primary-color
+	border-radius: $border-radius
 	cursor: pointer
 	transition: all 0.2s ease-in-out
 
@@ -38,7 +39,7 @@ const props = withDefaults(defineProps<Props>(),{
 
 	&:hover
 		// background: $secondary-color
-		transform: scale(1.1)
+		transform: scale(1.06)
 
 	&.right
 		@include min-m
@@ -57,10 +58,8 @@ const props = withDefaults(defineProps<Props>(),{
 		width: 60%
 
 .project-thumbnail
-	height: auto
-	max-width: 300px
-	max-height: 300px
-	object-fit: contain
+	// height: auto
+	// object-fit: contain
 
 	@include max-s
 		order: 1

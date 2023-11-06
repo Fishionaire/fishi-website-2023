@@ -23,9 +23,10 @@ const props = withDefaults(defineProps<IProps>(),{
 		justify-content: center
 		margin: 3rem 0
 		padding: 1rem
+		font-size: 1.2rem
 		color: white
 		background: $primary-color
-		background-image: linear-gradient(to bottom right, lighten($primary-color, 20%), $primary-color)
+		// background-image: linear-gradient(to bottom right, lighten($primary-color, 20%), $primary-color)
 		cursor: pointer
 		border-radius: $border-radius
 
