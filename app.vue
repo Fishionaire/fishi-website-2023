@@ -4,6 +4,8 @@
   </div>
 
   <Footer />
+
+  <CookieMessage />
 </template>
 
 <style lang="sass" scoped>
