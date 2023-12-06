@@ -11,8 +11,13 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ["@nuxt/image", "nuxt-gtag"],
+  modules: ["@nuxt/image", "nuxt-gtag", "@nuxtjs/google-fonts"],
   gtag: {
     id: 'G-8CS67Z4GET'
+  },
+  googleFonts: {
+    families: {
+		Onest: [100, 400, 600, 700],
+	}
   }
 })

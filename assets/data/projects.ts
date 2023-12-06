@@ -4,10 +4,10 @@ export const projectData: IProject[] = [
 	{
 		title: 'Paralax - Planning Solutions',
 		link: 'https://paralax.nl',
-		thumbnailImg: 'paralax_thumbnail.png',
+		thumbnailImg: 'paralax_mockup.png',
 		thumbnailAlt: 'Website Paralax',
 		keywords: ['Commercieel', 'Custom CMS', 'keyword 3', 'keyword 4', 'keyword 5', 'keyword 6', 'keyword 7 is very longgggggggg'],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Stichting Tous Ensemble',
@@ -15,7 +15,7 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'tousensemble_thumbnail.png',
 		thumbnailAlt: 'Website Tous Ensemble',
 		keywords: ['Stichting', 'Donatie systeem', "Wordpress"],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Marion Polak Stichting + Dashboard',
@@ -23,7 +23,7 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'marionpolak_thumbnail.png',
 		thumbnailAlt: 'Website Marion Polak',
 		keywords: ['Stichting', 'Survey', 'Dashboard', 'Multilangual'],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Sharon Manassen - Zilversmid',
@@ -31,7 +31,7 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'sharonmanassen_thumbnail.png',
 		thumbnailAlt: 'Website Sharon Manassen',
 		keywords: ['Commercieel', 'Animatie', 'Video'],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Tanza Coffee',
@@ -39,7 +39,7 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'tanzacoffee_thumbnail.png',
 		thumbnailAlt: 'Website Tanza Coffee',
 		keywords: ['Commercieel', 'Webshop', 'Wordpress' ],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Bodi-Lee',
@@ -47,7 +47,7 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'bodilee_thumbnail.png',
 		thumbnailAlt: 'Website Bodi-Lee',
 		keywords: ['Babysite', 'Multilangual'],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 	{
 		title: 'Maevie-Luna',
@@ -55,6 +55,6 @@ export const projectData: IProject[] = [
 		thumbnailImg: 'maevieluna_thumbnail.png',
 		thumbnailAlt: 'Website Maevie-Luna',
 		keywords: ['Babysite', 'Multilangual'],
-		description: '<b>bold test</b> description description',
+		description: '<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description',
 	},
 ]

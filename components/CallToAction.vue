@@ -26,7 +26,7 @@ const props = withDefaults(defineProps<IProps>(),{
 		font-size: 1.2rem
 		color: white
 		background: $primary-color
-		// background-image: linear-gradient(to bottom right, lighten($primary-color, 20%), $primary-color)
+		background-image: $gradient-1
 		cursor: pointer
 		border-radius: $border-radius
 

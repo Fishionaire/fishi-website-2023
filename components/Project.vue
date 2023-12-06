@@ -4,7 +4,9 @@
 
 			<h3>{{ props.project.title }}</h3>
 			<div class="keywords-box">
-				<span v-for="keyword,i in props.project.keywords" class="keyword-box" :key="i">{{ keyword }}</span>
+				<div v-for="keyword,i in props.project.keywords" class="keyword-box" :key="i">
+					<div>{{ keyword }}</div>
+				</div>
 			</div>
 			<p v-html="props.project.description"></p>
 		</div>
@@ -27,12 +29,14 @@ const props = withDefaults(defineProps<Props>(),{
 .project-box
 	display: flex
 	justify-content: space-between
+	align-items: center
 	gap: 1rem
 	padding: 1rem
-	border: 2px solid $primary-color
+	// border: 2px solid $primary-color
 	border-radius: $border-radius
 	cursor: pointer
 	transition: all 0.2s ease-in-out
+	flex-direction: row-reverse
 
 	@include max-s
 		flex-direction: column
@@ -40,9 +44,12 @@ const props = withDefaults(defineProps<Props>(),{
 	&:hover
 		// background: $secondary-color
 		transform: scale(1.06)
+		img
+			// transform: scale(1.06)
+			filter: saturate(2)
 
 	&.right
-		@include min-m
+		// @include min-m
 			flex-direction: row-reverse
 
 .project-text-box
@@ -72,12 +79,15 @@ const props = withDefaults(defineProps<Props>(),{
 	flex-wrap: wrap
 
 .keyword-box
-	margin: 0.3rem 0.3rem 0.3rem 0
-	padding: 0.3rem 0.6rem
-	font-size: 0.8rem
-	font-weight: 600
-	background: $secondary-color
-	color: white
+	margin: 0.2rem 0.2rem 0.2rem 0
+	padding: 0.1rem
+	font-size: 0.7rem
+	background-image: $gradient-2
 	border-radius: 100px
 	white-space: nowrap
+
+	div
+		padding: 0.2rem 0.4rem
+		background: white
+		border-radius: 100px
 </style>
