@@ -1,28 +1,34 @@
 <template>
-	<nuxt-link :to="props.project.link" class="project-box">
-		<div class="project-text-box">
-
-			<h3>{{ props.project.title }}</h3>
-			<div class="keywords-box">
-				<div v-for="keyword,i in props.project.keywords" class="keyword-box" :key="i">
-					<div>{{ keyword }}</div>
-				</div>
-			</div>
-			<p v-html="props.project.description"></p>
-		</div>
-			<NuxtImg :src="`/${props.project.thumbnailImg}`" class="project-thumbnail" :alt="props.project.thumbnailAlt"/>
-	</nuxt-link>
+  <nuxt-link :to="props.project.link" class="project-box">
+    <div class="project-text-box">
+      <h3>{{ props.project.title }}</h3>
+      <div class="keywords-box">
+        <div
+          v-for="(keyword, i) in props.project.keywords"
+          class="keyword-box"
+          :key="i"
+        >
+          <div>{{ keyword }}</div>
+        </div>
+      </div>
+      <p v-html="props.project.description"></p>
+    </div>
+    <NuxtImg
+      :src="`/${props.project.thumbnailImg}`"
+      class="project-thumbnail"
+      :alt="props.project.thumbnailAlt"
+    />
+  </nuxt-link>
 </template>
 
 <script setup lang="ts">
-import type { IProject } from '~/types/Project.js'
+import type { IProject } from "~/types/Project.js";
 
 type Props = {
-	project: any;
-}
+  project: any;
+};
 
-const props = withDefaults(defineProps<Props>(),{
-})
+const props = withDefaults(defineProps<Props>(), {});
 </script>
 
 <style lang="sass" scoped>
@@ -33,6 +39,7 @@ const props = withDefaults(defineProps<Props>(),{
 	gap: 1rem
 	padding: 1rem
 	// border: 2px solid $primary-color
+	background-color: rgba($primary-color, 0.1)
 	border-radius: $border-radius
 	cursor: pointer
 	transition: all 0.2s ease-in-out
@@ -42,8 +49,8 @@ const props = withDefaults(defineProps<Props>(),{
 		flex-direction: column
 
 	&:hover
-		// background: $secondary-color
-		transform: scale(1.06)
+		background-color: rgba($primary-color, 0.2)
+		// transform: scale(1.06)
 		img
 			// transform: scale(1.06)
 			filter: saturate(2)
@@ -88,6 +95,13 @@ const props = withDefaults(defineProps<Props>(),{
 
 	div
 		padding: 0.2rem 0.4rem
-		background: white
+		background-color: white
 		border-radius: 100px
+</style>
+
+<style lang="sass">
+.dark
+	.keyword-box
+		div
+			background-color: $bg-color-dark
 </style>

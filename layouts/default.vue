@@ -1,33 +1,32 @@
 <template>
+  {{ isDark }}
+  <button @click="toggleDark()">Toggle Dark Mode</button>
 
-{{ isDark  }}
-		<button @click="toggleDark()">Toggle Dark Mode</button>
-
-	<div class="fishi-content-box">
-	<slot />
+  <div class="fishi-content-box">
+    <slot />
   </div>
 
   <FishiFooter />
 
-  	<ClientOnly fallback="Cookie Message">
-  		<CookieMessage />
-	</ClientOnly>
+  <ClientOnly fallback="Cookie Message">
+    <CookieMessage />
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
+import { useDark, useToggle } from "@vueuse/core";
 
-const isDark = useDark() //
-const toggleDark = useToggle(isDark)
+const isDark = useDark(); //
+const toggleDark = useToggle(isDark);
 
 useSeoMeta({
-  title: 'Fishionaire',
-  ogTitle: 'Fishionaire',
-  description: 'Web Development Agency',
-  ogDescription: 'Web Development Agency',
-  ogImage: 'https://example.com/image.png', ////
-  twitterCard: 'summary_large_image', ////
-})
+  title: "Fishionaire",
+  ogTitle: "Fishionaire",
+  description: "Web Development Agency",
+  ogDescription: "Web Development Agency",
+  ogImage: "https://example.com/image.png", ////
+  twitterCard: "summary_large_image", ////
+});
 </script>
 
 <style lang="sass" scoped>
@@ -41,12 +40,10 @@ useSeoMeta({
 	@include max-s
 		padding: 0 1rem
 		width: 100%
-
-
 </style>
 
 <style lang="sass">
 .dark
-	background: #27001E
+	background-color: $bg-color-dark
 	color: white
 </style>
