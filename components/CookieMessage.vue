@@ -30,7 +30,6 @@ const revokeCookie = () => {
 	justify-content: center
 	align-items: center
 	color: white
-	// text-align: center
 	background-color: rgba($primary-color, 0.9)
 	border-top: 1px solid $primary-color
 	z-index: 1000

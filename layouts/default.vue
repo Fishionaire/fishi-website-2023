@@ -1,6 +1,5 @@
 <template>
-  {{ isDark }}
-  <button @click="toggleDark()">Toggle Dark Mode</button>
+  <ThemeMode />
 
   <div class="fishi-content-box">
     <slot />
@@ -14,11 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { useDark, useToggle } from "@vueuse/core";
-
-const isDark = useDark(); //
-const toggleDark = useToggle(isDark);
-
 useSeoMeta({
   title: "Fishionaire",
   ogTitle: "Fishionaire",
@@ -40,10 +34,4 @@ useSeoMeta({
 	@include max-s
 		padding: 0 1rem
 		width: 100%
-</style>
-
-<style lang="sass">
-.dark
-	background-color: $bg-color-dark
-	color: white
 </style>

@@ -89,7 +89,7 @@ const props = withDefaults(defineProps<Props>(), {});
 	margin: 0.2rem 0.2rem 0.2rem 0
 	padding: 0.1rem
 	font-size: 0.7rem
-	background-image: $gradient-2
+	background-image: $gradient-1
 	border-radius: 100px
 	white-space: nowrap
 
