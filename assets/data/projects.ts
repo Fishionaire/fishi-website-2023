@@ -29,7 +29,7 @@ export const projectData: IProject[] = [
   },
   {
     title: "Marion Polak Stichting + Dashboard",
-    link: "https://marionpolak.nl",
+    link: "https://marionpolakstichting.nl",
     thumbnailImg: "marionpolak_mockup.png",
     thumbnailAlt: "Website Marion Polak",
     keywords: ["Stichting", "Survey", "Dashboard", "Multilangual"],

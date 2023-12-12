@@ -38,8 +38,7 @@ const props = withDefaults(defineProps<Props>(), {});
 	align-items: center
 	gap: 1rem
 	padding: 1rem
-	// border: 2px solid $primary-color
-	background-color: rgba($primary-color, 0.1)
+	background-color: rgba($primary-color, 0.14)
 	border-radius: $border-radius
 	cursor: pointer
 	transition: all 0.2s ease-in-out
@@ -49,15 +48,12 @@ const props = withDefaults(defineProps<Props>(), {});
 		flex-direction: column
 
 	&:hover
-		background-color: rgba($primary-color, 0.2)
-		// transform: scale(1.06)
+		background-color: rgba($primary-color, 0.28)
 		img
-			// transform: scale(1.06)
 			filter: saturate(2)
 
 	&.right
-		// @include min-m
-			flex-direction: row-reverse
+		// flex-direction: row-reverse
 
 .project-text-box
 	display: flex
@@ -72,9 +68,6 @@ const props = withDefaults(defineProps<Props>(), {});
 		width: 60%
 
 .project-thumbnail
-	// height: auto
-	// object-fit: contain
-
 	@include max-s
 		order: 1
 

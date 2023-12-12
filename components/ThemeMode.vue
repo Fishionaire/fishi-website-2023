@@ -16,30 +16,35 @@ const toggleDark = useToggle(isDark);
 .dark
 	background-color: $bg-color-dark
 	color: white
+
+	.toggle-box
+		background-color: darken($primary-color,20%) !important
 </style>
 
 <style lang="sass" scoped>
 .toggle-box
 	position: absolute
-	top: 4px
-	right: 4px
-	width: 60px
+	top: 6px
+	right: 6px
+	width: 54px
 	height: 30px
-	padding: 2px
-	background-color: rgba($primary-color,1)
+	padding: 4px
+	background-color: darken($primary-color,20%)
+	background-color: black
 	border-radius: 100px
 
 
 .toggle-button
-	width: 26px
-	height: 26px
+	position: relative
+	width: 22px
+	height: 22px
 	background-color: white
 	border-radius: 100px
-	transition: all 0.2s ease-in-out
-	// z-index: 10
+	transition: all 2s ease //// @todo: fix transition
+	z-index: 10
 
 	&.dark
-		transform: translateX(30px)
+		transform: translateX(24px)
 
 .icon
 	position: absolute
