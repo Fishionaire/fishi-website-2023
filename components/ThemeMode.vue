@@ -29,7 +29,7 @@ const toggleDark = useToggle(isDark);
 	width: 54px
 	height: 30px
 	padding: 4px
-	background-color: darken($primary-color,20%)
+	// background-color: darken($primary-color,20%)
 	background-color: black
 	border-radius: 100px
 

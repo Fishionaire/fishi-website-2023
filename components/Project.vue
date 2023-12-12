@@ -38,7 +38,7 @@ const props = withDefaults(defineProps<Props>(), {});
 	align-items: center
 	gap: 1rem
 	padding: 1rem
-	background-color: rgba($primary-color, 0.14)
+	background-color: rgba($primary-color, 0.1)
 	border-radius: $border-radius
 	cursor: pointer
 	transition: all 0.2s ease-in-out
@@ -48,7 +48,7 @@ const props = withDefaults(defineProps<Props>(), {});
 		flex-direction: column
 
 	&:hover
-		background-color: rgba($primary-color, 0.28)
+		background-color: rgba($primary-color, 0.2)
 		img
 			filter: saturate(2)
 
@@ -77,9 +77,9 @@ const props = withDefaults(defineProps<Props>(), {});
 .keywords-box
 	display: flex
 	flex-wrap: wrap
+	gap: 0.5rem
 
 .keyword-box
-	margin: 0.2rem 0.2rem 0.2rem 0
 	padding: 0.1rem
 	font-size: 0.7rem
 	background-image: $gradient-1

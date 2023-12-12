@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <!-- <NuxtImg src="/fishi_logo.png" /> -->
-    <svgo-logo-test class="logo" />
+    <svgo-logo class="logo" />
 
     <h1>Fishionaire</h1>
     <h2 class="sub-title">web development agency</h2>

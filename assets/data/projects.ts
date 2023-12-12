@@ -8,12 +8,12 @@ export const projectData: IProject[] = [
     thumbnailAlt: "Website Paralax",
     keywords: [
       "Commercieel",
+      "MKB",
       "Custom CMS",
-      "keyword 3",
-      "keyword 4",
-      "keyword 5",
-      "keyword 6",
-      "keyword 7 is very longgggggggg",
+      "SEO",
+      "Design",
+      "Consultancy",
+      "Third party integrations",
     ],
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
@@ -23,7 +23,7 @@ export const projectData: IProject[] = [
     link: "https://tousensemble.nu",
     thumbnailImg: "tousensemble_mockup.png",
     thumbnailAlt: "Website Tous Ensemble",
-    keywords: ["Stichting", "Donatie systeem", "Wordpress"],
+    keywords: ["Stichting", "Wordpress", "Donatie systeem", "Nieuwsbrief"],
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
   },
@@ -32,7 +32,15 @@ export const projectData: IProject[] = [
     link: "https://marionpolakstichting.nl",
     thumbnailImg: "marionpolak_mockup.png",
     thumbnailAlt: "Website Marion Polak",
-    keywords: ["Stichting", "Survey", "Dashboard", "Multilangual"],
+    keywords: [
+      "Stichting",
+      "Survey",
+      "Formulier",
+      "Dashboard",
+      "Multilangual",
+      "Hosting",
+      "API",
+    ],
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
   },
@@ -41,7 +49,7 @@ export const projectData: IProject[] = [
     link: "https://sharonmanassen.com/",
     thumbnailImg: "sharonmanassen_mockup.png",
     thumbnailAlt: "Website Sharon Manassen",
-    keywords: ["Commercieel", "Animatie", "Video"],
+    keywords: ["Artistiek", "Portfolio", "Typografie", "Animatie", "Video"],
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
   },
@@ -50,7 +58,7 @@ export const projectData: IProject[] = [
     link: "https://tanzacoffee.com/",
     thumbnailImg: "tanzacoffee_mockup.png",
     thumbnailAlt: "Website Tanza Coffee",
-    keywords: ["Commercieel", "Webshop", "Wordpress"],
+    keywords: ["Commercieel", "Webshop", "Wordpress", "Abonnementen"],
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
   },
@@ -72,4 +80,9 @@ export const projectData: IProject[] = [
     description:
       "<b>bold test</b> description description description description description description description description description description description description description description description description description description description description description description description description description description description description",
   },
+
+  // -- Toe te voegen:
+  // Camilles Cadeaus
+  // Dimitri
+  // Bruiloft website Chris & Mel?
 ];
